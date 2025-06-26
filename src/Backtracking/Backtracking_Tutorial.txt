@@ -1,0 +1,106 @@
+Here’s a simplified, clean version of the **Backtracking** topic suitable for GitHub documentation or a README file:
+
+---
+
+# Backtracking
+
+## What is Backtracking?
+
+Backtracking is a problem-solving technique that builds solutions step by step and abandons ("backtracks") if a step leads to a dead end. It’s useful for problems like puzzles, games, and constraint-based tasks.
+
+---
+
+## Key Concepts
+
+* **Incremental Construction**: Build the solution piece by piece.
+* **Feasibility Check**: After adding a piece, check if it's still valid.
+* **Backtracking**: If not valid, remove the last piece and try a different one.
+
+---
+
+## How It Works
+
+1. Start with an empty solution.
+2. Try adding an element.
+3. If the solution is valid:
+
+   * Recurse and continue.
+4. If not:
+
+   * Remove the last element (backtrack) and try the next option.
+5. Repeat until a valid full solution is found or all options are exhausted.
+
+---
+
+## Common Use Cases
+
+* **N-Queens** – Place queens so they don’t attack each other.
+* **Sudoku Solver** – Fill a grid while obeying constraints.
+* **Graph Coloring** – Color vertices without adjacent same colors.
+* **Combination Sum** – Find number combinations that add to a target.
+
+---
+
+## Pros & Cons
+
+**Advantages:**
+
+* Easy to implement.
+* Works well with small input sizes.
+
+**Disadvantages:**
+
+* Inefficient for large inputs.
+* Needs pruning/optimizations for better performance.
+
+---
+
+## Pseudocode
+
+```java
+procedure Backtrack(partial_solution)
+    if is_a_solution(partial_solution)
+        process_solution(partial_solution)
+    else
+        for each candidate in generate_candidates(partial_solution)
+            partial_solution.add(candidate)
+            if is_valid(partial_solution)
+                Backtrack(partial_solution)
+            partial_solution.remove(candidate)
+```
+
+---
+
+## Example: LeetCode 39 - Combination Sum (Java)
+
+```java
+public class Solution {
+    public List<List<Integer>> combinationSum(int[] candidates, int target) {
+        List<List<Integer>> result = new ArrayList<>();
+        Arrays.sort(candidates);
+        backtrack(result, new ArrayList<>(), candidates, target, 0);
+        return result;
+    }
+
+    private void backtrack(List<List<Integer>> result, List<Integer> tempList, int[] candidates, int remain, int start) {
+        if (remain < 0) return;
+        else if (remain == 0) result.add(new ArrayList<>(tempList));
+        else {
+            for (int i = start; i < candidates.length; i++) {
+                tempList.add(candidates[i]);
+                backtrack(result, tempList, candidates, remain - candidates[i], i);
+                tempList.remove(tempList.size() - 1);
+            }
+        }
+    }
+}
+```
+
+---
+
+## Complexity
+
+* **Time**: `O(2^t)` where `t = target`
+* **Space**: `O(t)` recursion stack + space for results
+
+---
