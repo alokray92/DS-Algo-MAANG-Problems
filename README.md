@@ -1,9 +1,7 @@
 ---
-
 # Project Title:
 
 **Coding Interview Patterns with Java ☕️ — Tutorials & Practice Questions**
-
 ---
 
 ## 1. Project Description
