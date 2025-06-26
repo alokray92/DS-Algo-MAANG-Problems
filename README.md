@@ -1,10 +1,6 @@
----
-
 # Project Title:
 
 **Coding Interview Patterns with Java ☕️ — Tutorials & Practice Questions**
-
----
 
 ## 1. Project Description
 
@@ -17,7 +13,6 @@ This repository is a comprehensive guide for preparing coding interviews using c
 
 The project is organized by skill level to help learners strengthen problem-solving techniques gradually.
 
----
 
 ## 2. Prerequisites
 
@@ -32,8 +27,6 @@ Before diving into practice problems, ensure you're familiar with:
 
     * Structures: Stack, Queue, Tree, Graph
     * Algorithms: Sorting, Searching
-
----
 
 ## 3. Pattern-Based Structure
 
@@ -79,7 +72,6 @@ Before diving into practice problems, ensure you're familiar with:
 * Union-Find
 * Ordered Sets
 
----
 
 ## 4. Preparation Roadmaps
 
@@ -91,13 +83,11 @@ A visual breakdown of essential interview topics across:
 * Algorithms
 * Problem-Solving Techniques
 
----
 
 ### b. Topic-wise Study Plan
 
 Organized path for each major pattern. Progress from basic to complex with integrated problem-solving checkpoints.
 
----
 
 ## 5. Curated Practice Problems
 
@@ -119,7 +109,6 @@ A categorized index of high-quality practice questions across key areas like:
 
 Each topic includes links to representative Java solutions and explanations.
 
----
 
 ## 6. Installation & Usage
 
@@ -137,13 +126,11 @@ Each topic includes links to representative Java solutions and explanations.
 
 4. Practice and contribute
 
----
 
 ## 7. Resources Used
 
 This repository combines self-written tutorials and practice problem solutions with explanations generated using various learning aids and technical tools.
 
----
 
 ## 8. Contributions
 
@@ -152,8 +139,6 @@ Want to improve this project?
 * Fork the repo
 * Submit pull requests
 * For major changes, open an issue to discuss your proposal
-
----
 
 ## 9. Credits & Acknowledgments
 
